@@ -1,0 +1,3 @@
+App started
+Processing data
+App finished
