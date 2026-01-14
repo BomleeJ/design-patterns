@@ -33,7 +33,7 @@ struct NaiveTextFormatter {
         }
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const NaiveTextFormatter obj) {
+    friend std::ostream& operator<<(std::ostream& os, const NaiveTextFormatter& obj) {
         string s = "";
         for (size_t i = 0; i < obj.txt.size(); i++)
         {
@@ -48,6 +48,7 @@ struct NaiveTextFormatter {
             }
 
         }
+        cout << "HERE\n";
         return os << s;
     }
 
